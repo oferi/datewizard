@@ -6,11 +6,16 @@
     "react-datepicker": "4.21.0"
   },
   "main": "/index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  },
   "name": "wdp66r",
+  "homepage": "http://oferi.github.io/datewizard",
   "description": null,
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
